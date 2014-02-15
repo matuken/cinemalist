@@ -3,6 +3,23 @@
 
 require "rubygems"
 require "mechanize"
+require "date"
+
+
+#次の金曜日と土曜日を算出
+
+today = Date.today
+nextweek = today + 8
+p nextweek
+while today < nextweek do 
+	today + 1
+    #if today.wday = 5 then
+	#    friday = today
+	    #saturday = today++
+	#	p friday
+		#p saturday
+    #end
+end
 
 agent = Mechanize.new
 uri = "http://www.aeoncinema.com/"
